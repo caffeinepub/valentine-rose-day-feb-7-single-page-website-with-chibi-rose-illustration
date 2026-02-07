@@ -1,0 +1,8 @@
+{
+  "frontend/src/App.tsx": "Main application component that renders the RoseDayPage as a single-page experience.",
+  "frontend/src/pages/RoseDayPage.tsx": "Complete Rose Day landing page featuring a chibi boy with roses and chocolate, animated hearts, soft pink gradient backgrounds, and a personalized greeting message for Hetu with improved text visibility using the updated stronger pink color tokens (text-rose-text and text-rose-medium) applied consistently across header, date, subtitle, message card, and footer without low-opacity modifiers.",
+  "frontend/src/index.css": "Global styles with OKLCH Rose Day color palette featuring stronger, more saturated pink text tokens (rose-medium at 0.68 lightness with 0.20 chroma, rose-text at 0.75 lightness with 0.22 chroma, both at 355 hue for vibrant pink visibility), custom animations (floating hearts, gentle movements), Valentine-themed design tokens for both light and dark modes, and base body styling using font-sans utility.",
+  "frontend/tailwind.config.js": "Tailwind configuration with Rose Day color tokens, updated font families (Poppins for sans, Playfair Display for display, Dancing Script for script), custom border radius, and soft shadow utilities.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file as no backend queries are needed for this static presentation website.",
+  "frontend/index.html": "HTML entry point with Google Fonts preconnect and font loading for Poppins (sans), Playfair Display (display), and Dancing Script (script) font families."
+}

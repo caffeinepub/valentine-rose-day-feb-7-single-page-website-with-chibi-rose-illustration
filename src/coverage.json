@@ -1,0 +1,49 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-07T03:02:50.685Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 2,
+    "items": [
+      {
+        "id": "REQ-12",
+        "summary": "Update the Rose Day theme text color tokens to use a stronger, more saturated pink for primary readable text (not a near-white tint), so the on-page copy is clearly visible against the current red/pink background and gradient overlays.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/index.css"
+        ],
+        "matchedFiles": [
+          "frontend/src/index.css"
+        ]
+      },
+      {
+        "id": "REQ-13",
+        "summary": "Ensure the most prominent text elements on the Rose Day page use the updated stronger-pink readable text styling consistently, including the header greeting, date, subtitle, message card body text, and footer text.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/RoseDayPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/RoseDayPage.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/index.css",
+    "frontend/src/pages/RoseDayPage.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

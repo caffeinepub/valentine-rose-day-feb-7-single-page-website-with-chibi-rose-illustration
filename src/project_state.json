@@ -1,0 +1,165 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 15,
+  "summary": "Valentine-themed website for Rose Day (7th Feb) with a soft red/pink background and a chibi boy holding a pink rose for his girlfriend.",
+  "architectural_notes": [
+    "Hero illustration must visually blend with the site background (no harsh cutout/mismatched backdrop); keep full-color Valentine palette.",
+    "Hero illustration update: chibi boy should hold a bunch of roses in one hand and a Dairy Milk chocolate in the other; keep Valentine palette and background blending consistent with the site.",
+    "Greeting message content finalized: \"Happy Rose Day, my beautiful Hetuuuuuu\" followed by the provided paragraph (use as the on-page Rose Day greeting text).",
+    "Typography styling update requested: make text more visible by shifting font color toward a whitish-pink (improve contrast/readability against the soft red/pink background).",
+    "Text visibility change requested: make the on-page text color pink itself (stronger/more saturated pink) rather than a subtle whitish-pink, to improve readability against the soft red/pink background."
+  ],
+  "known_issues": [
+    "Current chibi boy asset appears black-and-white and/or has a background that does not match the website background.",
+    "User reports current text is still not visible enough; needs a stronger pink text color for readability."
+  ],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-create-a-responsive-single-page-valentine-rose-day-website-that-clearly-depicts-rose-day-on-7th-feb-with-a-soft-reddish-pink-background-and-a-romantic-cute-aesthetic",
+      "title": "Create a responsive single-page Valentine/Rose Day website that clearly depicts “Rose Day on 7th Feb” with a soft reddish-pink background and a romantic, cute aesthetic.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-main-hero-section-featuring-a-chibi-style-boy-holding-a-pink-rose-for-his-girlfriend-presented-as-the-central-visual-element-of-the-page",
+      "title": "Add a main hero section featuring a chibi-style boy holding a pink rose for his girlfriend, presented as the central visual element of the page.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-coherent-visual-theme-colors-typography-spacing-and-component-styling-consistent-across-the-page-using-a-distinct-valentine-rose-day-style-avoid-a-blue-purple-palette",
+      "title": "Implement a coherent visual theme (colors, typography, spacing, and component styling) consistent across the page, using a distinct Valentine/Rose Day style (avoid a blue/purple palette).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-generated-image-assets-to-the-frontend-as-static-files-under-frontend-public-assets-generated-and-render-them-directly-from-the-frontend-do-not-proxy-through-the-backend",
+      "title": "Add the generated image assets to the frontend as static files under `frontend/public/assets/generated` and render them directly from the frontend (do not proxy through the backend).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-short-greeting-message-to-the-rose-day-page-english-user-facing-text-in-a-prominent-visually-consistent-position-e-g-in-the-header-area-near-the-title-date-without-disrupting-the-existing-layout",
+      "title": "Add a short greeting message to the Rose Day page (English user-facing text) in a prominent, visually consistent position (e.g., in the header area near the title/date) without disrupting the existing layout.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-hero-chibi-boy-image-so-it-is-full-color-not-black-and-white-and-its-background-blending-matches-the-website-background-no-visible-mismatched-box-background-behind-the-character-update-the-page-to-use-the-corrected-asset",
+      "title": "Update the hero chibi boy image so it is full color (not black-and-white) and its background/blending matches the website background (no visible mismatched box/background behind the character). Update the page to use the corrected asset.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-website-typography-by-switching-to-a-new-cohesive-font-set-body-sans-display-headings-and-script-accent-and-apply-it-consistently-across-the-rose-day-single-page-site",
+      "title": "Update the website typography by switching to a new, cohesive font set (body/sans, display/headings, and script/accent) and apply it consistently across the Rose Day single-page site.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-hero-chibi-boy-illustration-so-the-character-holds-a-bunch-of-roses-in-one-hand-and-a-dairy-milk-chocolate-bar-in-the-other-keeping-the-illustration-full-color-and-with-a-clean-transparent-background-blended-cutout-consistent-with-the-existing-page-style-update-the-rose-day-page-to-use-the-new-updated-asset-and-adjust-the-image-alt-text-accordingly-english",
+      "title": "Update the hero chibi boy illustration so the character holds a bunch of roses in one hand and a Dairy Milk chocolate bar in the other, keeping the illustration full-color and with a clean transparent/background-blended cutout consistent with the existing page style. Update the Rose Day page to use the new/updated asset and adjust the image alt text accordingly (English).",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-rose-day-page-header-greeting-text-to-use-exactly-the-user-provided-message-including-line-breaks-and-emoji-in-a-prominent-visually-consistent-position-near-the-title-date-without-disrupting-the-existing-layout",
+      "title": "Update the Rose Day page header greeting text to use exactly the user-provided message (including line breaks and emoji) in a prominent, visually consistent position near the title/date without disrupting the existing layout.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-adjust-the-rose-day-theme-text-color-tokens-so-on-page-text-appears-more-visible-and-shifts-toward-a-lighter-whitish-pink-while-preserving-the-existing-romantic-red-pink-palette",
+      "title": "Adjust the Rose Day theme text color tokens so on-page text appears more visible and shifts toward a lighter whitish-pink while preserving the existing romantic red/pink palette.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-most-prominent-text-elements-on-the-rose-day-page-use-the-updated-more-visible-whitish-pink-text-styling-consistently",
+      "title": "Ensure the most prominent text elements on the Rose Day page use the updated, more-visible whitish-pink text styling consistently.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-rose-day-theme-text-color-tokens-to-use-a-stronger-more-saturated-pink-for-primary-readable-text-not-a-near-white-tint-so-the-on-page-copy-is-clearly-visible-against-the-current-red-pink-background-and-gradient-overlays",
+      "title": "Update the Rose Day theme text color tokens to use a stronger, more saturated pink for primary readable text (not a near-white tint), so the on-page copy is clearly visible against the current red/pink background and gradient overlays.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-most-prominent-text-elements-on-the-rose-day-page-use-the-updated-stronger-pink-readable-text-styling-consistently-including-the-header-greeting-date-subtitle-message-card-body-text-and-footer-text",
+      "title": "Ensure the most prominent text elements on the Rose Day page use the updated stronger-pink readable text styling consistently, including the header greeting, date, subtitle, message card body text, and footer text.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a Valentine/Rose Day (7th Feb) website with a soft red/pink background and a chibi boy holding a pink rose for his girlfriend.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add a short greeting message to the Rose Day page.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Ensure the chibi boy hero image is in full color (not black and white) and its background/blending matches the website background.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Change/update the website font (typography).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Update the hero chibi boy illustration so he holds a bunch of roses in one hand and a Dairy Milk chocolate in the other.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Increase on-page font visibility by adjusting text color toward a whitish-pink for better contrast/readability.",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Valentine Rose Day (Feb 7) single-page website with chibi rose illustration",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

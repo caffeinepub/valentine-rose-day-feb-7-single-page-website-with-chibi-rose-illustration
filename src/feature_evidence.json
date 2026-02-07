@@ -1,0 +1,41 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-rose-day-theme-text-color-tokens-to-use-a-stronger-more-saturated-pink-for-primary-readable-text-not-a-near-white-tint-so-the-on-page-copy-is-clearly-visible-against-the-current-red-pink-background-and-gradient-overlays",
+      "featureTitle": "Update the Rose Day theme text color tokens to use a stronger, more saturated pink for primary readable text (not a near-white tint), so the on-page copy is clearly visible against the current red/pink background and gradient overlays.",
+      "files": [
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-ensure-the-most-prominent-text-elements-on-the-rose-day-page-use-the-updated-stronger-pink-readable-text-styling-consistently-including-the-header-greeting-date-subtitle-message-card-body-text-and-footer-text",
+      "featureTitle": "Ensure the most prominent text elements on the Rose Day page use the updated stronger-pink readable text styling consistently, including the header greeting, date, subtitle, message card body text, and footer text.",
+      "files": [
+        "frontend/src/pages/RoseDayPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-13"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

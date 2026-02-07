@@ -1,0 +1,250 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 1.5rem;
+        
+        /* Rose Day Valentine color palette - soft reddish pinks */
+        --background: 0.98 0.02 15;
+        --foreground: 0.25 0.08 15;
+        
+        --card: 0.99 0.01 15;
+        --card-foreground: 0.25 0.08 15;
+        
+        --popover: 0.99 0.01 15;
+        --popover-foreground: 0.25 0.08 15;
+        
+        --primary: 0.65 0.18 15;
+        --primary-foreground: 0.99 0.01 15;
+        
+        --secondary: 0.95 0.03 15;
+        --secondary-foreground: 0.35 0.08 15;
+        
+        --muted: 0.96 0.02 15;
+        --muted-foreground: 0.55 0.06 15;
+        
+        --accent: 0.75 0.15 15;
+        --accent-foreground: 0.99 0.01 15;
+        
+        --destructive: 0.55 0.22 25;
+        --destructive-foreground: 0.99 0.01 15;
+        
+        --border: 0.90 0.04 15;
+        --input: 0.90 0.04 15;
+        --ring: 0.70 0.15 15;
+        
+        /* Custom Rose Day tokens - stronger visible pink text */
+        --rose-pink: 0.95 0.05 15;
+        --soft-pink: 0.97 0.03 15;
+        --cream-pink: 0.98 0.02 20;
+        --rose-accent: 0.70 0.18 15;
+        --rose-deep: 0.45 0.12 15;
+        --rose-medium: 0.68 0.20 355;
+        --rose-text: 0.75 0.22 355;
+    }
+
+    .dark {
+        --background: 0.20 0.05 15;
+        --foreground: 0.98 0.02 15;
+        
+        --card: 0.25 0.06 15;
+        --card-foreground: 0.98 0.02 15;
+        
+        --popover: 0.22 0.05 15;
+        --popover-foreground: 0.98 0.02 15;
+        
+        --primary: 0.75 0.15 15;
+        --primary-foreground: 0.20 0.05 15;
+        
+        --secondary: 0.30 0.06 15;
+        --secondary-foreground: 0.98 0.02 15;
+        
+        --muted: 0.30 0.06 15;
+        --muted-foreground: 0.70 0.10 15;
+        
+        --accent: 0.65 0.18 15;
+        --accent-foreground: 0.98 0.02 15;
+        
+        --destructive: 0.60 0.20 25;
+        --destructive-foreground: 0.98 0.02 15;
+        
+        --border: 0.35 0.06 15;
+        --input: 0.35 0.06 15;
+        --ring: 0.65 0.15 15;
+        
+        /* Custom Rose Day tokens - dark mode */
+        --rose-pink: 0.30 0.08 15;
+        --soft-pink: 0.25 0.06 15;
+        --cream-pink: 0.28 0.07 20;
+        --rose-accent: 0.75 0.18 15;
+        --rose-deep: 0.85 0.15 15;
+        --rose-medium: 0.78 0.18 355;
+        --rose-text: 0.85 0.20 355;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground font-sans;
+    }
+}
+
+@layer utilities {
+    /* Custom animations */
+    @keyframes float-gentle {
+        0%, 100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-15px);
+        }
+    }
+    
+    @keyframes float-slow {
+        0%, 100% {
+            transform: translate(0, 0);
+        }
+        25% {
+            transform: translate(10px, -10px);
+        }
+        50% {
+            transform: translate(0, -20px);
+        }
+        75% {
+            transform: translate(-10px, -10px);
+        }
+    }
+    
+    @keyframes float-medium {
+        0%, 100% {
+            transform: translate(0, 0);
+        }
+        33% {
+            transform: translate(-8px, -15px);
+        }
+        66% {
+            transform: translate(8px, -8px);
+        }
+    }
+    
+    @keyframes float-fast {
+        0%, 100% {
+            transform: translate(0, 0);
+        }
+        50% {
+            transform: translate(5px, -12px);
+        }
+    }
+    
+    @keyframes pulse-soft {
+        0%, 100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+        50% {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+    }
+    
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes fade-in-up {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .animate-float-gentle {
+        animation: float-gentle 4s ease-in-out infinite;
+    }
+    
+    .animate-float-slow {
+        animation: float-slow 8s ease-in-out infinite;
+    }
+    
+    .animate-float-medium {
+        animation: float-medium 6s ease-in-out infinite;
+    }
+    
+    .animate-float-fast {
+        animation: float-fast 4s ease-in-out infinite;
+    }
+    
+    .animate-pulse-soft {
+        animation: pulse-soft 3s ease-in-out infinite;
+    }
+    
+    .animate-fade-in {
+        animation: fade-in 1s ease-out;
+    }
+    
+    .animate-fade-in-up {
+        animation: fade-in-up 1.2s ease-out;
+    }
+    
+    .animate-fade-in-delayed {
+        animation: fade-in-up 1.5s ease-out;
+    }
+    
+    /* Custom colors */
+    .bg-rose-pink {
+        background-color: oklch(var(--rose-pink));
+    }
+    
+    .bg-soft-pink {
+        background-color: oklch(var(--soft-pink));
+    }
+    
+    .bg-cream-pink {
+        background-color: oklch(var(--cream-pink));
+    }
+    
+    .text-rose-accent {
+        color: oklch(var(--rose-accent));
+    }
+    
+    .text-rose-deep {
+        color: oklch(var(--rose-deep));
+    }
+    
+    .text-rose-medium {
+        color: oklch(var(--rose-medium));
+    }
+    
+    .text-rose-text {
+        color: oklch(var(--rose-text));
+    }
+    
+    .fill-rose-accent {
+        fill: oklch(var(--rose-accent));
+    }
+    
+    .border-rose-accent {
+        border-color: oklch(var(--rose-accent));
+    }
+    
+    .decoration-rose-accent {
+        text-decoration-color: oklch(var(--rose-accent));
+    }
+    
+    .shadow-soft {
+        box-shadow: 0 10px 40px -10px oklch(var(--rose-accent) / 0.3);
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no backend logic.",
+  "feature_evidence.json": "Feature evidence listing two UI styling features and the files they affect.",
+  "frontend-file-summaries.txt": "Prewritten summaries describing the purpose and content of various frontend files.",
+  "frontend/index.css": "Tailwind base theme variables for color, layout, and dark mode, applying global background and text styles.",
+  "frontend/index.html": "HTML entry point loading Google Fonts and mounting the React app.",
+  "frontend/src/App.tsx": "Renders the RoseDayPage as the sole app content.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and manages an authenticated or anonymous backend actor using react-query.",
+  "frontend/src/hooks/useInternetIdentity.ts": "React context and provider for Internet Identity login, identity loading, and state management.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file indicating no backend queries are needed.",
+  "frontend/src/index.css": "Global Tailwind styles defining Rose Day color tokens, dark mode variants, and animations.",
+  "frontend/src/main.tsx": "App bootstrap wiring React, query client, Internet Identity provider, and global styles.",
+  "frontend/src/pages/RoseDayPage.tsx": "Full Rose Day landing page with themed text, animations, floating hearts, and a chibi illustration.",
+  "frontend/tailwind.config.js": "Tailwind CSS config enabling dark mode, content paths, custom colors, fonts, radii, and plugins for typography, container queries, and animations.",
+  "project_state.json": "Project state file describing the Valentine-themed site, feature requirements, design notes, known issues, and current fix request status."
+}

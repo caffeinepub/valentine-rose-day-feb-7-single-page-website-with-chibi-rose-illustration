@@ -1,0 +1,39 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Improve Rose Day page text visibility with stronger pink theme tokens",
+  "requirements": [
+    {
+      "id": "REQ-12",
+      "summary": "Strengthen Rose Day readable text theme tokens to a more saturated pink that stays legible over the red/pink background and gradients.",
+      "acceptanceCriteria": [
+        "In `frontend/src/index.css`, adjust the text-related theme tokens used for readability (e.g., `--rose-text`, `--rose-medium`, and/or `--foreground` if needed) so they render as clearly pink text with noticeably higher visibility than the current styling.",
+        "The updated text colors remain within the existing romantic red/pink palette (no blue/purple shift).",
+        "Text remains readable across the full-page background image plus gradient overlay (no sections where text blends into the background)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Update Rose Day text-related OKLCH tokens (notably `--rose-text` and `--rose-medium`, and adjust `--foreground` only if required) to a stronger, more saturated pink that is clearly readable against the existing red/pink background and overlay gradients while staying in the same romantic palette."
+        }
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "summary": "Apply the updated stronger-pink readable text styling consistently to key Rose Day page text elements (header, date, subtitle, message card text/labels, and footer).",
+      "acceptanceCriteria": [
+        "In `frontend/src/pages/RoseDayPage.tsx`, the header greeting paragraph, the date line, and the subtitle line visually appear in the new stronger-pink readable color (not washed out / near-white).",
+        "In the message card, the paragraph text and the ‘Love • Romance • Forever’ labels remain clearly legible and aligned with the updated pink text styling.",
+        "Footer text remains readable (including the © line and the caffeine.ai link) without relying on very low-opacity text colors that reduce visibility."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/RoseDayPage.tsx",
+          "operation": "modify",
+          "description": "Ensure prominent text elements use the strengthened readable pink styling consistently: keep/align header greeting, date, subtitle, and message-card body/labels to the updated `text-rose-text`/`text-rose-medium` tokens; reduce/remove low-opacity usage for footer text (e.g., avoid very low alpha like `text-rose-text/60`) so it remains clearly readable over the background/overlays."
+        }
+      ]
+    }
+  ]
+}

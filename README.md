@@ -1,2 +1,3 @@
-# valentine-rose-day-feb-7-single-page-website-with-chibi-rose-illustration
-Exported from Caffeine project: Valentine Rose Day (Feb 7) single-page website with chibi rose illustration
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

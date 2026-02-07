@@ -1,0 +1,56 @@
+{
+  "kind": "build_request",
+  "title": "Make Rose Day page text clearly visible with stronger pink text colors",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-12",
+      "text": "Update the Rose Day theme text color tokens to use a stronger, more saturated pink for primary readable text (not a near-white tint), so the on-page copy is clearly visible against the current red/pink background and gradient overlays.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "nah nah nah, ain't visible... get it pink itself"
+        ]
+      },
+      "acceptanceCriteria": [
+        "In `frontend/src/index.css`, adjust the text-related theme tokens used for readability (e.g., `--rose-text`, `--rose-medium`, and/or `--foreground` if needed) so they render as clearly pink text with noticeably higher visibility than the current styling.",
+        "The updated text colors remain within the existing romantic red/pink palette (no blue/purple shift).",
+        "Text remains readable across the full-page background image plus gradient overlay (no sections where text blends into the background)."
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "Ensure the most prominent text elements on the Rose Day page use the updated stronger-pink readable text styling consistently, including the header greeting, date, subtitle, message card body text, and footer text.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "nah nah nah, ain't visible... get it pink itself"
+        ]
+      },
+      "acceptanceCriteria": [
+        "In `frontend/src/pages/RoseDayPage.tsx`, the header greeting paragraph, the date line, and the subtitle line visually appear in the new stronger-pink readable color (not washed out / near-white).",
+        "In the message card, the paragraph text and the ‘Love • Romance • Forever’ labels remain clearly legible and aligned with the updated pink text styling.",
+        "Footer text remains readable (including the © line and the caffeine.ai link) without relying on very low-opacity text colors that reduce visibility."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit any frontend immutable paths (e.g., `frontend/src/main.tsx`, `frontend/src/hooks/useActor.ts`, `frontend/src/hooks/useInternetIdentity.ts[x]`, `frontend/src/components/ui`).",
+    "Keep the app as a single-page Rose Day landing page; no backend changes are required."
+  ],
+  "nonGoals": [
+    "Do not change the user-provided greeting message content or its line breaks/emoji.",
+    "Do not change or regenerate existing image assets as part of this request.",
+    "Do not add new sections or features beyond improving text visibility and color."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}
